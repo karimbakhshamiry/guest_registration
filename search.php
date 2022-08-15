@@ -14,7 +14,7 @@
             padding: 0;
             background-image: linear-gradient(130deg, #333 70%, rgb(65, 236, 65) 70%,#333 90%, rgb(65, 236, 65) 90%);
             background-repeat: no-repeat;
-            height: 100vh;
+            min-height: 100vh;
             color: white;
             font-family: sans-serif;
         }

@@ -8,7 +8,6 @@
 	$workPlace = $_POST['workPlace'];
     
 	if (isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['contact']) && isset($_POST['jobTitle']) && isset($_POST['workPlace'])) {
-        // $sql = "INSERT INTO info_visitor(Name, Last_Name, Contact, Job_Title, Work_Place, Present) VALUES ('$firstName','$lastName', $contact,'$jobTitle', '$workPlace', false)";
         $sql = "UPDATE info_visitor SET Name="."'".$firstName."'".",Last_Name="."'".$lastName."'".",Contact="."'".$contact."'".",Job_Title="."'".$jobTitle."'".",Work_Place="."'".$workPlace."'  WHERE ID=".$_GET['id']."";
 		$link->query($sql);
         header('location: search.php');
@@ -30,7 +29,7 @@
             padding: 0;
             background-image: linear-gradient(130deg, #333 70%, rgb(65, 236, 65) 70%,#333 90%, rgb(65, 236, 65) 90%);
             background-repeat: no-repeat;
-            height: 100vh;
+            min-height: 100vh;
             color: white;
             font-family: sans-serif;
         }
