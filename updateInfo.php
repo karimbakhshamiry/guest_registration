@@ -107,7 +107,7 @@
             color: rgb(65, 236, 65);
         }
 	</style>
-	<title>Registration Form</title>
+	<title>Edit Visitors Info</title>
 </head>
 <body>
     <div class="container nav__container">
@@ -118,7 +118,7 @@
     </div>
 	<main>
     <div class="container main__container">
-		<h3 class="title">Registration From</h3>
+		<h3 class="title">Edit Visitors Info</h3>
 		<form action="" method="POST">
 			<input value = '<?php echo $_GET['firstName']?>' type="text" name="firstName" id="firstName" placeholder="Enter visitor's first name" required>
 			<input value = '<?php echo $_GET['lastName']?>' type="text" name="lastName" id="lastName" placeholder="Enter visitor's last name" required>
